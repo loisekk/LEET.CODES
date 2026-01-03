@@ -45,6 +45,55 @@ print(result)  # True
 
 Complexity: O(n) time | O(n) space
 
+🧩 LeetCode 2341 – Maximum Number of Pairs in an Array
+📌 Problem Statement
+
+Maximum Number of Pairs in an Array
+
+You are given a 0-indexed integer array nums.
+In one operation, you can choose two equal integers, remove them from the array, and form a pair.
+This operation can be performed as many times as possible.
+
+Return an array of size 2 where:
+
+answer[0] is the number of pairs formed
+
+answer[1] is the number of leftover elements after all possible operations
+
+💡 Approach
+
+Use a hash map (dictionary) to store the frequency of each element.
+
+For each element count:
+
+count // 2 gives the number of pairs that can be formed.
+
+count % 2 gives the number of leftover elements.
+
+Sum both values to construct the final result.
+
+⚙️ Complexity Analysis
+
+Time Complexity: O(n)
+
+Space Complexity: O(n)
+
+🧠 Key Concepts Used
+
+Hash Map (Frequency Counting)
+
+Greedy Pair Formation
+
+Integer Division and Modulo
+
+✅ Example
+
+Input:
+nums = [1,3,2,1,3,2,2]
+
+Output:
+[3,1]
+
 ⚡ Notes
 
 Problems focus on arrays, hashing, and efficient lookups.
