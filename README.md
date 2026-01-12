@@ -1,103 +1,79 @@
-🧩 30 Days of LeetCode Challenge
+# 🚀 LeetCode Problem Solving Journey
 
-This repository contains my solutions for 30 LeetCode problems in 30 days. Each solution is implemented in Python with a focus on clean code and efficiency.
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-Python-blue" />
+  <img src="https://img.shields.io/badge/Platform-LeetCode-orange" />
+  <img src="https://img.shields.io/badge/Focus-DSA-success" />
+  <img src="https://img.shields.io/badge/License-MIT-brightgreen" />
+</p>
 
-1️⃣ Two Sum
+<p align="center">
+  <b>Consistency • Problem Solving • Growth</b>
+</p>
 
-Link: Two Sum
+---
 
-Problem: Find indices of two numbers in an array that add up to a target.
+## 👋 About This Repository
 
-Solution:
+This repository represents my **LeetCode problem-solving journey**, focused on building strong fundamentals in **Data Structures & Algorithms** through consistent practice.
 
-class Solution:
-    def twoSum(self, nums: list[int], target: int):
-        index_map = {}
-        for i, num in enumerate(nums):
-            if target - num in index_map:
-                return [index_map[target - num], i]
-            index_map[num] = i
+Instead of explaining every individual problem, this repo reflects my **learning mindset, discipline, and continuous improvement** as a B.Tech student preparing for software engineering roles.
 
-result = Solution().twoSum([2,3,4,5], 9)
-print(result)  # [2, 3]
+---
 
+## 🎯 Goals & Focus
 
-Complexity: O(n) time | O(n) space
+- Strengthen logical and analytical thinking  
+- Identify and apply common DSA patterns  
+- Write clean, efficient, and readable code  
+- Build consistency through daily practice  
+- Track long-term growth publicly  
 
-2️⃣ Divide Array Into Equal Pairs
+---
 
-Link: Divide Array Into Equal Pairs
+## 🛠️ Tech Stack
 
-Problem: Check if an array can be divided into pairs of equal elements.
+- **Language:** Python  
+- **Platform:** LeetCode  
+- **Concepts:** Arrays, Strings, Hashing, Two Pointers, Greedy, Math, and more  
 
-Solution:
+---
 
-class Solution:
-    def divideArray(self, nums):
-        count = {}
-        for num in nums:
-            count[num] = count.get(num, 0) + 1
-        return all(freq % 2 == 0 for freq in count.values())
+## 📈 Journey Highlights
 
-result = Solution().divideArray([3,3,4,4,5,5])
-print(result)  # True
+- Problems solved across **Easy → Medium** difficulty  
+- Focus on **optimized solutions** over brute force  
+- Emphasis on **clarity, correctness, and simplicity**  
+- Learning through solving, reviewing, and refining  
 
+---
 
-Complexity: O(n) time | O(n) space
+## ⚡ Minimal Summary (Recruiter View)
 
-🧩 LeetCode 2341 – Maximum Number of Pairs in an Array
-📌 Problem Statement
+- 📌 **Purpose:** Consistent LeetCode problem solving to master DSA  
+- 🧠 **Skills:** Logical thinking, pattern recognition, optimization  
+- 🛠️ **Tools:** Python, LeetCode  
+- 📈 **Outcome:** Strong problem-solving foundation for SDE roles  
 
-Maximum Number of Pairs in an Array
+---
 
-You are given a 0-indexed integer array nums.
-In one operation, you can choose two equal integers, remove them from the array, and form a pair.
-This operation can be performed as many times as possible.
+## 👤 Author
 
-Return an array of size 2 where:
+**Yash Brahmankar**  
+B.Tech Student | Aspiring Software Engineer  
 
-answer[0] is the number of pairs formed
+- 📂 GitHub: This repository  
+- 💻 LeetCode: Active problem solver  
 
-answer[1] is the number of leftover elements after all possible operations
+---
 
-💡 Approach
+## 📄 License
 
-Use a hash map (dictionary) to store the frequency of each element.
+This repository is licensed under the **MIT License**.  
+You are free to use, modify, and share the code with proper attribution.
 
-For each element count:
+---
 
-count // 2 gives the number of pairs that can be formed.
+⭐ If this repository adds value or inspires consistency, consider starring it.
 
-count % 2 gives the number of leftover elements.
-
-Sum both values to construct the final result.
-
-⚙️ Complexity Analysis
-
-Time Complexity: O(n)
-
-Space Complexity: O(n)
-
-🧠 Key Concepts Used
-
-Hash Map (Frequency Counting)
-
-Greedy Pair Formation
-
-Integer Division and Modulo
-
-✅ Example
-
-Input:
-nums = [1,3,2,1,3,2,2]
-
-Output:
-[3,1]
-
-⚡ Notes
-
-Problems focus on arrays, hashing, and efficient lookups.
-
-Solutions are written for clarity and performance.
-
-More problems coming soon!
+> *Small progress every day leads to big results.*
