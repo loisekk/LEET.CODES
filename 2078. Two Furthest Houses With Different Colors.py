@@ -17,6 +17,3 @@ class Solution(object):
                break
             
         return max(left_side , right_side)
-
-                  
-        
